@@ -19,7 +19,7 @@ from email import encoders
 fromaddr = "teamanything98@gmail.com"
 
 config={
-        "apiKey": "AIzaSyA1wjplVeOEq-19cb7QDyjlqd2TNl0iDws",
+        "apiKey": "firebase-apiKey",
         "authDomain": "scheduleit-cc688.firebaseapp.com",
         "databaseURL": "https://scheduleit-cc688.firebaseio.com",
         "storageBucket": "scheduleit-cc688.appspot.com"
@@ -27,7 +27,7 @@ config={
 
 
 email = "teamanything98@gmail.com"
-password = "test123"
+password = "your-firebase-password"
 
 firebase = pyrebase.initialize_app(config)
 auth=firebase.auth()
@@ -459,7 +459,7 @@ def send_sms(name,event):
     contact_number = users[name]["mobile"]
 
     from . import SmsBot
-    query = SmsBot.sms("9820501130","E6896N") # username is usually Mobile Number (Logging in)
+    query = SmsBot.sms("9820501130","ways2sms-password-here") # username is usually Mobile Number (Logging in)
     my_message = "Hi, " + name + "\nYou're successfully registered for :" + event
     query.send(contact_number,my_message) # recipient = receiver's number
     query.Logout()
@@ -477,7 +477,7 @@ def send_text_mail(subject,body_text,toaddr="nishchith.s@somaiya.edu"):
     server.starttls()
 
     # your login details
-    server.login(fromaddr, "@randombits98")
+    server.login(fromaddr, "your-gmail-password-here")
     text = msg.as_string()
     server.sendmail(fromaddr, toaddr, text)
     print("Text email sent successfully")
@@ -543,7 +543,7 @@ def send_mail(subject,body_text,location,toaddr = "nishchith.s@somaiya.edu"):
 
     s = smtplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
-    s.login(fromaddr, "@randombits98")
+    s.login(fromaddr, "your-gmail-password-here")
     text = msg.as_string()
     s.sendmail(fromaddr, toaddr, text)
     print("Text email sent successfully")
@@ -563,7 +563,9 @@ def send_ticket(name,event):
     location = name+"-"+event+"-qr.png"
     send_mail(subject="Your Confirmed Tickets for : "+event,body_text="PFA, \n regards",toaddr=email_id,location = location)
     send_sms(name,event)
+
     #return db.child('event').get(user['idToken']).val()[event][10]
+
 # If modifying these scopes, delete your previously saved credentials
 # at ~/.credentials/calendar-python-quickstart.json
 SCOPES = 'https://www.googleapis.com/auth/calendar'
