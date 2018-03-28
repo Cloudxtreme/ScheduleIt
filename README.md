@@ -22,7 +22,8 @@
 ### Features Implemented
 
 * Portal for Student , Admin  and Council
-* Common calender for all three sections
+* Common calendar for all three sections
+* Mail & SMS notifications for events
 * Event / Placement offers feed for students
 * Statistic for event managing council
 * QR Code based ticketing system
