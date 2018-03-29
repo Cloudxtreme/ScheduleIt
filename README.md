@@ -16,7 +16,7 @@
 <a href ="http://g.recordit.co/y29W5weKxj.gif" > Watch Here </a>
 </div>
 
-> ScheduleIt is like any other event management app but with added impactful features .
+> ScheduleIt is like any other event management app but with added impactful features .It will help in reducing the hassles and the delay caused in getting permissions in order to conduct events in colleges. 
 
 ------------------------------------------
 ### Features Implemented
@@ -28,6 +28,12 @@
 * Statistic for event managing council
 * QR Code based ticketing system
 
+------------------------------------------
+### Features That Can Be Implemented
+
+* Handle Payments for various events
+* Provide a way for organizer and companies to see details about registered candidates
+* Complete the feedback mechanism and add corresponding data visualization  
 
 ------------------------------------------
 ### Installation
@@ -39,12 +45,13 @@ $ pip install -r requirements
 
 ------------------------------------------
 ### Recognition / Credits
-> This repository / project was a part of unscript2k18 hackathon contucted by Fr. Conceicao Rodrigues College of Engineering
+> This repository / project was a part of unscript2k18 hackathon conducted by Fr. Conceicao Rodrigues College of Engineering
 
 ------------------------------------------
 ### Contributors
 
-- [@shivam1708](https://github.com/nurdtechie98)
-- [@nurdtechie98](https://github.com/shivam1708)
-- [@freelancer-98](https://github.com/Freelancer-98)
 - [@inishchith](https://github.com/inishchith)
+- [@shivam1708](https://github.com/shivam1708)
+- [@nurdtechie98](https://github.com/nurdtechie98)
+- [@freelancer-98](https://github.com/Freelancer-98)
+
